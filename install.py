@@ -1,8 +1,9 @@
 import os
 def install():
-	os.system("apt update")
+	os.system("pkg update -y && pkg upgrade -y")
 	os.system("apt install python-tk")
 	os.system("apt install dirb -y")
+	os.system("gem install lolcat -y")
 	os.system("apt install sslstrip -y")
 	os.system("apt install bettercap -y")
 	os.system("apt install sslscan -y")
@@ -11,10 +12,10 @@ def install():
 	os.system("apt install macchanger -y")
 	os.system("apt install wafw00f -y")
 	os.system("apt install medusa -y")
-	os.system("cd /root && git clone https://github.com/thelinuxchoice/shellphish")
+	os.system("cd /root && git clone https://github.com/thelinuxchoice/shellphish || cd ~/ && git clone https://github.com/thelinuxchoice/shellphish ")
 	os.system("cd /root && git clone https://github.com/1N3/BruteX")
 	os.system("cd /root/BruteX && ./install.sh")
-	os.system("pip22 install mechanize")
+	os.system("pip2 install mechanize")
 	os.system("pip2 install json")
 	os.system("pip2 install whois")
 	os.system("pip2 install python-whois")
